@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #1b004e;
+}
+
+ul {
+    margin: 0;
+    padding: 25px 0;
+}
+li {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+}
