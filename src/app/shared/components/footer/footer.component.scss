@@ -1,0 +1,45 @@
+footer {
+  background: hsla(269, 100%, 21%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(269, 100%, 21%, 1) 0%,
+    hsla(284, 100%, 20%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(269, 100%, 21%, 1) 0%,
+    hsla(284, 100%, 20%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(269, 100%, 21%, 1) 0%,
+    hsla(284, 100%, 20%, 1) 100%
+  );
+
+  .navigation {
+padding: 40px 0;
+  }
+
+  .nav-item,
+  .nav-head {
+    text-transform: capitalize;
+  }
+  .nav-head {
+    color: white;
+    text-transform: uppercase;
+    font-size: 17;
+  }
+  .nav-item {
+    color: #bcbcbc;
+  }
+  .copyright {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #bcbcbc;
+    color: #bcbcbc;
+    padding: 40px 0;
+  }
+}
