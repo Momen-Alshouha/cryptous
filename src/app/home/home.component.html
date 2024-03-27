@@ -1,2 +1,25 @@
 <app-crypto-currency-prices></app-crypto-currency-prices>
 <app-features></app-features>
+<div class="container-fluid download py-md-5 py-2">
+  <div class="container d-flex">
+    <div class="d-flex flex-column gap-md-4 gap-2 justify-content-center">
+      <h2>Try the future, today. Download Crypto</h2>
+      <p>
+        Stay connected to the market with our mobile app. Featuring advanced
+        order types and analytical tools for experienced traders, as well as a
+        simple buy & sell interface for those just getting started.
+      </p>
+      <div class="d-flex download-app d-flex gap-3">
+        <div class="rounded-1 download-app-inner d-flex p-2 gap-2">
+          <img class="app-img" [src]="environment.imagesPath + 'smartphone-call.png'" alt="" />
+          <div class="d-flex flex-column">available on the <span>google play</span></div>
+        </div>
+        <div class="rounded-1 download-app-inner d-flex p-2 gap-2">
+          <img class="app-img" [src]="environment.imagesPath + 'app-store.png'" alt="" />
+          <div class="d-flex flex-column">available on the <span>app store</span></div>
+        </div>
+      </div>
+    </div>
+    <img [src]="environment.imagesPath + 'app.svg'" alt="" />
+  </div>
+</div>
