@@ -14,13 +14,12 @@ export class CryptoCurrencyPricesComponent implements OnInit {
   constructor(private _currencyService: CurrencyService) {}
 
   ngOnInit(): void {
-    this._currencyService.getAllCryptocurrencies('usd').subscribe((data) => {
-      this.cryptocurrencyData = data;
-    });
+    // this._currencyService.getAllCryptocurrencies('usd').subscribe((data) => {
+    //   this.cryptocurrencyData = data;
+    // });
 
     // this._currencyService.getGraphicalCurrencyData("").subscribe((data) => {
     //   this.cryptocurrencyData = data;
-    // });
-    
+    // }); 
   }
 }

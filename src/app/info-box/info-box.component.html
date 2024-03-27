@@ -1,0 +1,7 @@
+<div class="d-flex flex-column gap-3 {{additionalClasses}}">
+<img width="70px" height="70px" [src]="environment.specsPath+data.image" alt="">
+<h4>{{data.title}}</h4>
+<div class="d-flex flex-column" *ngFor="let subFeature of data.text">
+    <span>{{subFeature}}</span>
+</div>
+</div>
