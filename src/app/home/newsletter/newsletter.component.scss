@@ -1,0 +1,61 @@
+.newsletter {
+  &::after {
+    content: "";
+    display: inline-block;
+    background: url(../../../assets/images/shape.svg) no-repeat center;
+    background-size: contain;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    left: -90px;
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    background: url(../../../assets/images/shape2.svg) no-repeat center;
+    background-size: contain;
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+  }
+  position: relative;
+  color: white;
+  padding: 90px 0;
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  form {
+    position: relative;
+    button {
+      color: white;
+      position: absolute;
+      border-radius: 30px;
+      background-color: #eb5757;
+      border: 0;
+      outline: 0;
+      right: 6px;
+      top: 50%;
+      transform: translate(0, -50%);
+      padding: 10px 20px;
+    }
+    input {
+      padding: 15px 20px;
+      width: 450px;
+      border-radius: 30px;
+      outline: 2px solid white;
+      border: 0;
+      color: white;
+      background: transparent;
+    }
+    input:focus {
+      outline: 2px solid white;
+      border: 0;
+    }
+  }
+}
