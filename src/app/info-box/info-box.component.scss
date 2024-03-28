@@ -1,3 +1,30 @@
 h4 {
-    font-weight: bold;
+  font-weight: bold;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+}
+
+.article {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    h4 {
+      font-size: 19px;
+      padding: 0 10px;  
+    }
+    div {
+        padding: 0 10px;
+    }
+    span {
+        font-size: 12px;
+    }
+  img {
+    width: 100% !important;
+    min-height: 240px !important;
+    object-fit: cover;
+  }
 }

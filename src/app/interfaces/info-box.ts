@@ -1,8 +1,8 @@
 export interface InfoBox {
-    title:string,
-    image:string,
-    text : string[],
-    author?:string,
-    date?:Date,
-    mntsToRead?:string
+  title: string;
+  image: string;
+  text: string[];
+  author?: string;
+  date?: string;
+  mntsToRead?: number;
 }
