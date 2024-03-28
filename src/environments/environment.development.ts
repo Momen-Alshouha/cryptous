@@ -1,5 +1,5 @@
 export const environment = {
-    assetsPath:'src/assets/',
-    imagesPath:'src/assets/images/',
-    specsPath:'src/assets/specs/',
+    assetsPath:'assets/',
+    imagesPath:'assets/images/',
+    specsPath:'assets/specs/',
 };
