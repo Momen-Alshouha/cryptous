@@ -1,8 +1,11 @@
 .features {
-background-color: #fff6fb;
-padding: 90px 0;
-.title {
+  background-color: #fff6fb;
+  padding: 90px 0;
+  @media (max-width: 767.98px) {
+    padding: 20px 0;
+  }
+  .title {
     text-transform: capitalize;
     font-weight: bold;
-}
+  }
 }

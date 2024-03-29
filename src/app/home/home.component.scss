@@ -8,6 +8,9 @@
     width: 70%;
     padding: 0;
     margin: 0;
+    @media (max-width: 767.98px) { 
+      width: 100%;
+     }
   }
 
   &-app {
@@ -19,14 +22,25 @@
       div {
         text-transform: capitalize;
       }
-      span {
+      span.apple-google {
         text-transform: uppercase;
         font-weight: bold;
       }
       .app-img {
         object-fit: cover;
         width: 40px;
+        @media (max-width: 767.98px) { 
+          object-fit: contain;
+        width: 30px;
+         }
       }
     }
   }
+}
+
+.main-app-img {
+  @media (max-width: 767.98px) { 
+    width: 60%;
+    margin: 10px auto;
+   }
 }

@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="my-5">Today's Cryptocurrency Prices</h2>
+  <h2 class="my-md-5 my-2">Today's Cryptocurrency Prices</h2>
   <div class="table-responsive">
     <table class="table">
       <thead>
@@ -7,8 +7,8 @@
           <th>Name</th>
           <th>Price</th>
           <th>24h %</th>
-          <th>Market Cap</th>
-          <th>Total Volume</th>
+          <th class="mobile-view-hide">Market Cap</th>
+          <th class="mobile-view-hide">Total Volume</th>
         </tr>
       </thead>
       <tbody>
@@ -37,8 +37,8 @@
             ></span>
             {{ currency.price_change_percentage_24h | number : "1.2-2" }}%
           </td>
-          <td>{{ currency.market_cap | number }}</td>
-          <td>{{ currency.total_volume | number }}</td>
+          <td class="mobile-view-hide">{{ currency.market_cap | number }}</td>
+          <td class="mobile-view-hide">{{ currency.total_volume | number }}</td>
         </tr>
       </tbody>
     </table>

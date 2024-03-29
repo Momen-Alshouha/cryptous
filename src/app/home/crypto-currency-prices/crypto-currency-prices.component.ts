@@ -19,7 +19,7 @@ export class CryptoCurrencyPricesComponent implements OnInit {
 
   constructor(private _currencyService: CurrencyService) {}
   ngOnInit(): void {
-    this.fetchCryptocurrencyData();
+    // this.fetchCryptocurrencyData();
   }
 
   fetchCryptocurrencyData(): void {

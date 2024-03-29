@@ -1,7 +1,7 @@
 <app-crypto-currency-prices></app-crypto-currency-prices>
 <app-features></app-features>
 <div class="container-fluid download py-md-5 py-2">
-  <div class="container d-flex">
+  <div class="container d-flex flex-md-row flex-column-reverse">
     <div class="d-flex flex-column gap-md-4 gap-2 justify-content-center">
       <h2>Try the future, today. Download Crypto</h2>
       <p>
@@ -12,15 +12,15 @@
       <div class="d-flex download-app d-flex gap-3">
         <div class="rounded-1 download-app-inner d-flex p-2 gap-2">
           <img class="app-img" [src]="environment.imagesPath + 'smartphone-call.png'" alt="" />
-          <div class="d-flex flex-column">available on the <span>google play</span></div>
+          <div class="d-flex flex-column"><span class="d-none d-md-inline">available on the</span> <span class="apple-google">google play</span></div>
         </div>
         <div class="rounded-1 download-app-inner d-flex p-2 gap-2">
           <img class="app-img" [src]="environment.imagesPath + 'app-store.png'" alt="" />
-          <div class="d-flex flex-column">available on the <span>app store</span></div>
+          <div class="d-flex flex-column"><span class="d-none d-md-inline">available on the</span> <span class="apple-google">app store</span></div>
         </div>
       </div>
     </div>
-    <img [src]="environment.imagesPath + 'app.svg'" alt="" />
+    <img class="main-app-img" [src]="environment.imagesPath + 'app.svg'" alt="" />
   </div>
 </div>
 <app-articles></app-articles>

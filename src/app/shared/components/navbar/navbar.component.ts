@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { environment } from '../../../../environments/environment';
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-
+  protected environment = environment;
 }

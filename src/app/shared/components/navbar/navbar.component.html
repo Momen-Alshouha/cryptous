@@ -2,9 +2,9 @@
   <nav
     class="container nav d-flex align-items-center justify-content-between gap-5"
   >
-    <img src="../../../../assets/images/logo.svg" alt="" />
+    <img class="my-2 my-md-0" [src]=" environment.imagesPath +'logo.svg'" alt="" />
     <div class="d-flex align-items-center">
-      <ul class="nav-items d-flex gap-3 align-items-center">
+      <ul class="nav-items d-none d-md-flex gap-3 align-items-center">
         <li>home</li>
         <li>company</li>
         <li>about</li>
@@ -14,7 +14,7 @@
         <li>blog</li>
       </ul>
     </div>
-    <button class="nav-button ml-auto">trade now</button>
+    <button class="d-none d-md-block nav-button ml-auto">trade now</button>
   </nav>
   <header
     class="header container d-flex align-items-center justify-content-between gap-5"
@@ -26,6 +26,6 @@
         to leverages blockchain technology.
       </p>
     </div>
-    <img src="../../../../assets/images/heroimage.svg" alt="" />
+    <img class="d-none d-md-block" [src]="environment.imagesPath +'heroimage.svg'" alt="" />
   </header>
 </div>

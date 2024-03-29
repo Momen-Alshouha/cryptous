@@ -1,3 +1,13 @@
+.info-box,.sub-feature  {
+  @media (max-width: 767.98px) { 
+    align-items: center;
+    justify-content: center;
+    span {
+      text-align: center;
+    }
+   }
+}
+
 h4 {
   font-weight: bold;
 }
@@ -15,6 +25,10 @@ img {
     h4 {
       font-size: 19px;
       padding: 0 10px;  
+      margin: 0;
+      @media (max-width: 767.98px) { 
+        font-size: 16px;
+       }
     }
     div {
         padding: 0 10px;
@@ -26,5 +40,8 @@ img {
     width: 100% !important;
     min-height: 240px !important;
     object-fit: cover;
+    @media (max-width: 767.98px) { 
+      min-height: 170px !important; 
+    }
   }
 }
