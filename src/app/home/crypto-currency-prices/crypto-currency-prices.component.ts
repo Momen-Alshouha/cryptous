@@ -11,15 +11,29 @@ import { CommonModule } from '@angular/common';
 export class CryptoCurrencyPricesComponent implements OnInit {
   cryptocurrencyData: any;
   graphicalCurrencyDataLast7days: any;
+  loading: boolean = true;
+  currentPage: number = 1;
+  itemsPerPage: number = 10;
+  totalItems!: number;
+  totalPages: number = Math.ceil(this.totalItems / this.itemsPerPage);
+
   constructor(private _currencyService: CurrencyService) {}
-
   ngOnInit(): void {
-    // this._currencyService.getAllCryptocurrencies('usd').subscribe((data) => {
-    //   this.cryptocurrencyData = data;
-    // });
+    this.fetchCryptocurrencyData();
+  }
 
-    // this._currencyService.getGraphicalCurrencyData("").subscribe((data) => {
-    //   this.cryptocurrencyData = data;
-    // }); 
+  fetchCryptocurrencyData(): void {
+    this._currencyService
+      .getAllCryptocurrencies('usd', this.currentPage, this.itemsPerPage)
+      .subscribe((data) => {
+        this.cryptocurrencyData = data;
+        this.totalItems = data.length;
+        this.loading = false;
+      });
+  }
+
+  onPageChange(pageNumber: number): void {
+    this.currentPage = pageNumber;
+    this.fetchCryptocurrencyData();
   }
 }

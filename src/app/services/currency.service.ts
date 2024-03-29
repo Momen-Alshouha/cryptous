@@ -13,9 +13,22 @@ export class CurrencyService {
    * @param currency The currency in which market data is requested (e.g., USD, EUR).
    * @returns An observable of the cryptocurrency market data.
    */
-  getAllCryptocurrencies(currency: string): Observable<any> {
+  // getAllCryptocurrencies(currency: string): Observable<any> {
+  //   return this.http.get<any>(
+  //     `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&sparkline=false`
+  //   );
+  // }
+
+   /**
+   * Retrieves a list of all cryptocurrencies with their market data.
+   * @param currency The currency in which market data is requested (e.g., USD, EUR).
+   * @param page The page number to retrieve.
+   * @param perPage The number of items per page.
+   * @returns An observable of the cryptocurrency market data.
+   */
+   getAllCryptocurrencies(currency: string, page: number, perPage: number): Observable<any> {
     return this.http.get<any>(
-      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&sparkline=false`
+      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&per_page=${perPage}&page=${page}&sparkline=false`
     );
   }
 
