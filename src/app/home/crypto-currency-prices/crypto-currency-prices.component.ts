@@ -15,11 +15,10 @@ export class CryptoCurrencyPricesComponent implements OnInit {
   currentPage: number = 1;
   itemsPerPage: number = 10;
   totalItems!: number;
-  
 
   constructor(private _currencyService: CurrencyService) {}
   ngOnInit(): void {
-    // this.fetchCryptocurrencyData(); 
+    this.fetchCryptocurrencyData();
   }
 
   fetchCryptocurrencyData(): void {
