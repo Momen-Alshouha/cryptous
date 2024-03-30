@@ -7,5 +7,8 @@
   h2 {
     text-transform: capitalize;
     font-weight: bold;
+    @media (max-width: 767.98px) { 
+      margin-bottom: 30px;
+    }
   }
 }

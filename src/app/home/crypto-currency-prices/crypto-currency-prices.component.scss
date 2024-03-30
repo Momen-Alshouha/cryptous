@@ -15,10 +15,10 @@ th {
 th {
   font-size: 20px;
   padding: 20px 0;
-  @media (max-width: 767.98px) { 
+  @media (max-width: 767.98px) {
     font-size: 14px;
     padding: 10px 0;
-   }
+  }
 }
 td {
   img {
@@ -26,10 +26,10 @@ td {
   }
   font-size: 15px;
   padding: 20px 0;
-  @media (max-width: 767.98px) { 
+  @media (max-width: 767.98px) {
     font-size: 13px;
     padding: 10px 0;
-   }
+  }
 }
 
 .arrow-up:before {
@@ -43,10 +43,10 @@ td {
 .navigation {
   width: 22%;
   margin: 20px auto;
-  @media (max-width: 767.98px) { 
+  @media (max-width: 767.98px) {
     margin: 10px auto;
     width: 100%;
-   }
+  }
 }
 
 button {
@@ -72,17 +72,30 @@ button {
   -webkit-user-select: none;
   vertical-align: top;
   white-space: nowrap;
-  width: 100%;
+  width: 40%;
   z-index: 9;
   border: 0;
   transition: box-shadow 0.2s;
-  @media (max-width: 767.98px) { 
-   padding: 5px;
-   height: auto; 
-   }
+  @media (max-width: 767.98px) {
+    padding: 5px;
+    height: auto;
+  }
 }
 
 button:hover {
   box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
 }
 
+.navigation {
+  justify-content: right;
+
+  button {
+    @media (max-width: 767.98px) {
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 30px;
+    }
+  }
+}

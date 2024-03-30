@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container my-md-0 my-3">
   <h2 class="my-md-5 my-2">Today's Cryptocurrency Prices</h2>
   <div class="table-responsive">
     <table class="table">
@@ -43,17 +43,15 @@
       </tbody>
     </table>
 
-    <div class="navigation d-flex ">
+    <div class="navigation d-flex gap-2">
       <button
         (click)="onPageChange(currentPage - 1)"
         [disabled]="currentPage === 1"
       >
         Previous
       </button>
-      <span>{{ currentPage }} / {{ totalPages }}</span>
       <button
         (click)="onPageChange(currentPage + 1)"
-        [disabled]="currentPage === totalPages"
       >
         Next
       </button>
